@@ -1,0 +1,23 @@
+# 忽略下载的大型安装包
+已下载软件/*.zip
+已下载软件/*.7z
+已下载软件/*.msi
+已下载软件/*.exe
+
+# 忽略临时文件
+*.tmp
+*.log
+*.bak
+
+# 忽略系统文件
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 忽略IDE配置
+.vscode/
+.idea/
+*.swp
+
+# 保持目录结构
+!已下载软件/.gitkeep

@@ -1,0 +1,36 @@
+ROS2 Humble Windows 安装包 v1.0
+================================
+作者：Top Liu
+版本: 1.0
+发布日期: 2025年
+ROS2版本: Humble Hawksbill (LTS)
+支持平台: Windows 10/11 x64
+Python版本: 3.10
+
+包含内容:
+- 1_安装ROS2.bat - 一键安装脚本
+- 2_启动ROS2环境.bat - 环境启动脚本
+- 3_测试ROS2.bat - 功能测试脚本
+- 4_卸载ROS2.bat - 卸载脚本
+- README.md - 详细说明文档
+- 快速入门.md - 快速上手指南
+- VERSION.txt - 版本信息
+
+系统要求:
+- Windows 10/11 64位
+- Python 3.10.x
+- 4GB内存（推荐）
+- 5GB磁盘空间
+
+前置依赖:
+- Visual C++ Redistributables (vc_redist.x64.exe)
+
+安装包位置:
+- 已下载软件/ros2-humble-*-windows-release-amd64.zip
+
+更新日志:
+v1.0 (2025年)
+- 初始版本发布
+- 支持一键安装
+- 自动修复Python路径
+- 包含完整测试脚本
