@@ -263,6 +263,26 @@ python -m pip install packaging numpy netifaces pyyaml lxml
 1. 重新运行 `2_启动ROS2环境.bat`
 2. 脚本会自动修复Python路径
 
+
+### 问题7: local_setup.bat 中 Python 路径硬编码问题
+
+**原因**: 
+`local_setup.bat` 文件中硬编码了一个不存在的 Python 路径 `C:\pixi_ws\.pixi\envs\default\python.exe`，导致用户无法启动 ROS2 环境。这个路径是开发环境的特定路径，在大多数用户系统上不存在，造成启动脚本闪退。
+
+**解决**:
+将硬编码的 Python 绝对路径改为 `python` 命令，让系统自动查找 Python 解释器，更加通用和灵活。
+
+修复前
+```batch
+set "_colcon_python_executable=C:\pixi_ws\.pixi\envs\default\python.exe"
+```
+
+修复后
+```batch
+set "_colcon_python_executable=python"
+```
+
+
 ## Python节点开发
 
 在ROS2环境中，可以开发自定义Python节点：
